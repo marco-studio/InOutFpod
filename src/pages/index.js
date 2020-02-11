@@ -26,20 +26,20 @@ const IndexPage = ({ data }) => {
 
       <div>
         {/* ###############################    HEADER START ########################################### */}
-        <div className={`${albumStyle.slope} bg-gray-200`} />
+        <div className={`${albumStyle.slope}`} />
         <div
-          className=" max-w-lg md:max-w-2xl pl-12 pt-16 pr-12 md:flex md:justify-end 
+          className=" max-w-lg md:max-w-2xl pl-8 pr-8  pt-16  md:flex md:justify-end 
           md:flex-row-reverse m-auto md:pl-4 md:pr-4 lg:max-w-3xl xl:max-w-5xl  xl:m-auto relative mdx:pt-24 lgx:max-w-960 lgx:px-12  xl-mx-0"
         >
           <div className="md:ml-8 md:mt-3 lg:ml-12">
-            <div className="text-4xl font-medium md:text-3xl md:font-bold text-gray-900 lg:text-4xl">
+            <div className="text-3xl font-medium md:text-3xl md:font-bold text-gray-100 lgx:text-4xl">
               {data.site.siteMetadata.title}
             </div>
-            <div className="text-base mt-3 md:text-base text-gray-900">
+            <div className="text-base mt-3 md:text-base text-gray-100">
               By {data.site.siteMetadata.author}
             </div>
             <ul className="md:flex mt-6 hidden text-gray-100">
-              {/* <li className="mr-8">
+              <li className="mr-8">
                 <a href={data.site.siteMetadata.facebook}>
                   <svg
                     width="24"
@@ -51,12 +51,12 @@ const IndexPage = ({ data }) => {
                       fill-rule="evenodd"
                       clip-rule="evenodd"
                       d="M12.966 24H1.34C.6 24 0 23.4 0 22.66V1.064c0-.74.6-1.34 1.34-1.34h21.596c.74 0 1.34.6 1.34 1.34V22.66c0 .74-.6 1.34-1.34 1.34H16.75v-9.4h3.155l.473-3.664H16.75v-2.34c0-1.06.294-1.783 1.816-1.783h1.94V3.534c-.336-.044-1.488-.144-2.827-.144-2.797 0-4.712 1.707-4.712 4.843v2.702H9.803V14.6h3.163V24z"
-                      fill="#1A202C"
+                      fill="#F7FAFC"
                     />
                   </svg>
                 </a>
-              </li> */}
-              <li className="mr-8">
+              </li>
+              {/* <li className="mr-8">
                 <a href={data.site.siteMetadata.twitter}>
                   <svg
                     width="24"
@@ -72,7 +72,7 @@ const IndexPage = ({ data }) => {
                     />
                   </svg>
                 </a>
-              </li>
+              </li> */}
               <li className="mr-8">
                 <a href={data.site.siteMetadata.instagram}>
                   <svg
@@ -85,7 +85,7 @@ const IndexPage = ({ data }) => {
                       fill-rule="evenodd"
                       clip-rule="evenodd"
                       d="M11.954-.275c-3.296 0-3.71.014-5.004.073-1.292.059-2.174.264-2.946.564a5.95 5.95 0 0 0-2.15 1.4 5.95 5.95 0 0 0-1.4 2.15c-.3.772-.506 1.654-.565 2.946-.059 1.295-.073 1.708-.073 5.005 0 3.296.014 3.71.073 5.004.06 1.292.265 2.174.565 2.946a5.95 5.95 0 0 0 1.4 2.15 5.951 5.951 0 0 0 2.15 1.4c.772.3 1.654.506 2.946.564 1.295.06 1.708.073 5.004.073 3.297 0 3.71-.014 5.005-.073 1.292-.058 2.174-.264 2.946-.564a5.95 5.95 0 0 0 2.15-1.4 5.951 5.951 0 0 0 1.4-2.15c.3-.772.505-1.654.564-2.946.06-1.295.073-1.708.073-5.004 0-3.297-.014-3.71-.073-5.005-.059-1.292-.264-2.174-.564-2.946a5.95 5.95 0 0 0-1.4-2.15 5.949 5.949 0 0 0-2.15-1.4c-.772-.3-1.654-.505-2.946-.564-1.295-.06-1.708-.073-5.005-.073zm0 2.187c3.241 0 3.625.012 4.905.07 1.183.054 1.826.252 2.254.418.567.22.97.484 1.396.908.424.425.687.83.907 1.396.167.428.364 1.07.418 2.254.059 1.28.071 1.664.071 4.905 0 3.24-.012 3.624-.07 4.904-.055 1.184-.252 1.826-.419 2.254a3.76 3.76 0 0 1-.907 1.396c-.425.424-.83.688-1.396.908-.428.166-1.07.364-2.254.418-1.28.058-1.664.07-4.905.07-3.24 0-3.625-.012-4.904-.07-1.184-.054-1.827-.252-2.254-.418a3.761 3.761 0 0 1-1.396-.908 3.76 3.76 0 0 1-.908-1.396c-.166-.428-.364-1.07-.418-2.254-.058-1.28-.07-1.663-.07-4.904 0-3.241.012-3.625.07-4.905.054-1.184.252-1.826.418-2.254.22-.567.483-.971.908-1.396A3.76 3.76 0 0 1 4.796 2.4c.427-.166 1.07-.364 2.254-.418 1.28-.058 1.663-.07 4.904-.07zm0 3.718a6.233 6.233 0 1 0 0 12.466 6.233 6.233 0 0 0 0-12.466zm0 10.279a4.046 4.046 0 1 1 0-8.092 4.046 4.046 0 0 1 0 8.091zM19.89 5.383a1.457 1.457 0 1 1-2.913 0 1.457 1.457 0 0 1 2.913 0z"
-                      fill="#1A202C"
+                      fill="#F7FAFC"
                     />
                   </svg>
                 </a>
@@ -128,18 +128,13 @@ const IndexPage = ({ data }) => {
            md:text-xl"
           />
           <div className="mt-3 text-gray-700 leading-relaxed md:text-xl">
-            Hey, meet Bilal, Kwaku, Patrick &amp; Tom. 4 Black &amp; Mixed-Race
-            guys who became friends whilst studying at Cambridge University.
-            Join us as we talk about life before, during and well - after 'The
-            Bridge'. Expect chats about life, and our own experiences
+            Just some dudes and one sassy queen talking about different stuff IN
+            & OUT of FINLAND! In reality we just rumble, stutter and are super
+            awkward...
           </div>
-          <div className="mt-3 text-gray-700 leading-relaxed md:text-xl">
-            Cast:
-            <br /> Kwaku: @KwakuDapaah_ <br /> Patrick: @CariocoLondrino <br />{" "}
-            Bilal: @Tweetsbybilal <br /> Tom: @TomTheEconomist
-          </div>
+          <div className="mt-3 text-gray-700 leading-relaxed md:text-xl" />
           <ul className={`flex justify-center mt-12 md:mt-16 text-gray-900`}>
-            {/* <li className="">
+            <li className="">
               <a href={data.site.siteMetadata.facebook}>
                 <svg
                   width="24"
@@ -155,8 +150,8 @@ const IndexPage = ({ data }) => {
                   />
                 </svg>
               </a>
-            </li> */}
-            <li className="">
+            </li>
+            {/* <li className="">
               <a href={data.site.siteMetadata.twitter}>
                 <svg
                   width="24"
@@ -172,7 +167,7 @@ const IndexPage = ({ data }) => {
                   />
                 </svg>
               </a>
-            </li>
+            </li> */}
             <li className="ml-10">
               <a href={data.site.siteMetadata.instagram}>
                 <svg
@@ -237,10 +232,10 @@ const IndexPage = ({ data }) => {
                       {node.title}
                     </div>
                     <div className="mt-2 md:hidden">
-                      {formatSubTitle(node.itunes.summary)}
+                      {formatSubTitle(node.contentSnippet)}
                     </div>
                     <div className="mt-2 hidden md:block">
-                      {node.itunes.summary}
+                      {node.contentSnippet}
                     </div>
                     <div className="text-sm text-gray-700 font-medium mt-2">
                       {formatTime(node.itunes.duration)}
@@ -253,7 +248,9 @@ const IndexPage = ({ data }) => {
           <div className="flex justify-center mt-16 lgx:max-w-960 lgx:mx-12">
             <button
               onClick={() => setCount(count + 5)}
-              className="bg-teal-500 text-white font-bold py-3 px-8 rounded"
+              className={`${
+                albumStyle.footer
+              } text-white font-bold py-3 px-8 rounded`}
             >
               <span>Load More</span>
             </button>
@@ -273,7 +270,7 @@ export const query = graphql`
           title
           pubDate
           id
-          content
+          contentSnippet
           itunes {
             duration
             summary
